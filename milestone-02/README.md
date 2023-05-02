@@ -22,7 +22,7 @@ In the following, we assume that you have a local version of the dataset inside 
 
 We will create a docker image that cover a bunch of traditional retrieval approaches in jupyter notebooks:
 
-- Using the BM25 retrieval model in [pyterrier-bm25.ipynb](pyterrier-lexical-retrieval-bm25.ipynb)
+- Using the BM25 retrieval model in [pyterrier-bm25.ipynb](pyterrier-bm25.ipynb)
 - Using BM25 with the query rewriting model SDM in [pyterrier-bm25-sdm.ipynb](pyterrier-bm25-sdm.ipynb)
 - Using BM25 with the query expansion model RM3 in [pyterrier-bm25-rm3.ipynb](pyterrier-bm25-rm3.ipynb)
 - Combining multiple retrieval scores on multiple retrieval fields in [pyterrier-multi-field.ipynb](pyterrier-multi-field.ipynb) (this might serve as starting point or inspiration for feature based learning-to-rank approaches).
