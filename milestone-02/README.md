@@ -72,15 +72,31 @@ In this `tira-run` example, we set the arguments as follows:
 - `--input-directory` specifies the directory with the input data.
 - `--output-directory` specifies the directory to which the output data is written.
 
+This should yield a run like (top 3 lines with `head -3 bm25-output/run.txt`):
+
+```
+1 0 2021.ipm_journal-ir0anthology0volumeA58A1.6 1 16.708092762527492 BM25
+1 0 2011.spire_conference-2011.10 2 15.699445240396184 BM25
+1 0 2019.cikm_conference-2019.346 3 15.507585799713157 BM25
+```
+
 After we have executed the command above, we can again render the results:
 
 ```
 tira-run \
-    --input-directory ${PWD}/bm25-output \
+    --output-directory ${PWD}/bm25-output \
     --image registry.webis.de/code-research/tira/tira-user-ir-lab-sose-2023-<YOUR-GROUP-NAME>/ir-datasets:0.0.1 \
     --allow-network true \
     --command 'diffir --dataset iranthology-<YOUR-GROUP-NAME> --web $outputDir/run.txt > $outputDir/run.html'
 ```
+
+
+
+This yields a file `bm25-output/run.html` that should look like this:
+
+
+![Screenshot_20230502_195330](https://user-images.githubusercontent.com/10050886/235745769-48c5dfa4-0986-4ad5-93b4-1077b24839cd.png)
+
 
 
 Similarly, we can execute other notebooks. For instance, we can execute the notebook `pyterrier-multi-field.ipynb` via:
@@ -93,7 +109,28 @@ tira-run \
     --command '/workspace/run-pyterrier-notebook.py --input $inputDataset --output $outputDir --notebook /workspace/pyterrier-multi-field.ipynb'
 ```
 
+This should yield a run like (top 3 lines with `head -3 multi-field/run.txt`):
+
+```
+1 0 2010.cikm_conference-2010.284 1 41.0567764391176 BM25
+1 0 2018.wwwconf_conference-2018.13 2 39.37674403947608 BM25
+1 0 2015.tist_journal-ir0anthology0volumeA6A4.12 3 37.81074710961472 BM25
+```
+
 To render the results, we can again use:
+
+```
+tira-run \
+    --output-directory ${PWD}/multi-field \
+    --image registry.webis.de/code-research/tira/tira-user-ir-lab-sose-2023-<YOUR-GROUP-NAME>/ir-datasets:0.0.1 \
+    --allow-network true \
+    --command 'diffir --dataset iranthology-<YOUR-GROUP-NAME> --web $outputDir/run.txt > $outputDir/run.html'
+```
+
+This yields a file `multi-field/run.html` that should look like this:
+
+![Screenshot_20230502_195048](https://user-images.githubusercontent.com/10050886/235745270-de591307-3ab5-40a5-8902-cf2442f10f06.png)
+
 
 # Step 3: Submit tested retrieval approaches to TIRA
 
