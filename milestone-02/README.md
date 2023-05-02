@@ -62,7 +62,7 @@ tira-run \
     --input-directory ${PWD}/iranthology-dataset-tira \
     --output-directory ${PWD}/bm25-output \
     --image ir-lab-milestone-02 \
-    --command '/workspace/run-pyterrier-notebook.py --input $inputDataset --output $outputDir --notebook /workspace/full-rank-pipeline.ipynb'
+    --command '/workspace/run-pyterrier-notebook.py --input $inputDataset --output $outputDir --notebook /workspace/pyterrier-bm25.ipynb'
 ```
 
 In this `tira-run` example, we set the arguments as follows:
@@ -81,6 +81,19 @@ tira-run \
     --allow-network true \
     --command 'diffir --dataset iranthology-<YOUR-GROUP-NAME> --web $outputDir/run.txt > $outputDir/run.html'
 ```
+
+
+Similarly, we can execute other notebooks. For instance, we can execute the notebook `pyterrier-multi-field.ipynb` via:
+
+```
+tira-run \
+    --input-directory ${PWD}/iranthology-dataset-tira \
+    --output-directory ${PWD}/multi-field \
+    --image ir-lab-milestone-02 \
+    --command '/workspace/run-pyterrier-notebook.py --input $inputDataset --output $outputDir --notebook /workspace/pyterrier-multi-field.ipynb'
+```
+
+To render the results, we can again use:
 
 # Step 3: Submit tested retrieval approaches to TIRA
 
