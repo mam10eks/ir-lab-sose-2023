@@ -20,7 +20,7 @@ tira-run \
 
 In the following, we assume that you have a local version of the dataset inside `iranthology-dataset-tira`.
 
-# Step 1: Develop retrieval approaches
+# Step 1: Implement baseline retrieval approaches
 
 We will create a docker image that cover a bunch of traditional retrieval approaches in jupyter notebooks:
 
