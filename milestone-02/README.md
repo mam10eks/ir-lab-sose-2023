@@ -22,22 +22,9 @@ In the following, we assume that you have a local version of the dataset inside 
 
 # Step 1: Implement baseline retrieval approaches
 
-We will create a docker image that covers a bunch of simple baseline retrieval approaches in jupyter notebooks:
+We will create a docker image that covers a simple baseline retrieval approach with BM25 in a jupyter notebook. The file [pyterrier-bm25.ipynb](pyterrier-bm25.ipynb) contains the retrieval approach with BM25.
 
-- Using the BM25 retrieval model in [pyterrier-bm25.ipynb](pyterrier-bm25.ipynb)
-- Using BM25 with the query rewriting model SDM in [pyterrier-bm25-sdm.ipynb](pyterrier-bm25-sdm.ipynb)
-- Using BM25 with the query expansion model RM3 in [pyterrier-bm25-rm3.ipynb](pyterrier-bm25-rm3.ipynb)
-- Combining multiple retrieval scores on multiple retrieval fields in [pyterrier-multi-field.ipynb](pyterrier-multi-field.ipynb) (this might serve as starting point or inspiration for feature based learning-to-rank approaches).
-
-Besides those traditional approaches, we have starters for other, more advanced baseline retrieval models available:
-
-- [MonoT5](todo-add-link)
-- [ColBERT](todo-add-link)
-- [DPR](todo-add-link)
-
-Those starters might serve as inspiration for your individual retrieval paradigms that you will implement later in milestone 3 (please note: for milestone 2 of the IR lab, it is completely sufficient if you use simple approaches covered in this step-by-step guide, but feel of course free to look into more advanced approaches).
-
-To build the docker image with the traditional retrieval approaches, please execute:
+To build the docker image with the [pyterrier-bm25.ipynb](pyterrier-bm25.ipynb) notebook, please execute:
 
 ```
 docker build -t ir-lab-milestone-02 .
@@ -99,39 +86,7 @@ This yields a file `bm25-output/run.html` that should look like this:
 
 ![Screenshot_20230502_195330](https://user-images.githubusercontent.com/10050886/235745769-48c5dfa4-0986-4ad5-93b4-1077b24839cd.png)
 
-
-
-Similarly, we can execute other notebooks. For instance, we can execute the notebook `pyterrier-multi-field.ipynb` via:
-
-```
-tira-run \
-    --input-directory ${PWD}/iranthology-dataset-tira \
-    --output-directory ${PWD}/multi-field \
-    --image ir-lab-milestone-02 \
-    --command '/workspace/run-pyterrier-notebook.py --input $inputDataset --output $outputDir --notebook /workspace/pyterrier-multi-field.ipynb'
-```
-
-This should yield a run like (top 3 lines with `head -3 multi-field/run.txt`):
-
-```
-1 0 2010.cikm_conference-2010.284 1 41.0567764391176 BM25
-1 0 2018.wwwconf_conference-2018.13 2 39.37674403947608 BM25
-1 0 2015.tist_journal-ir0anthology0volumeA6A4.12 3 37.81074710961472 BM25
-```
-
-To render the results, we can again use:
-
-```
-tira-run \
-    --output-directory ${PWD}/multi-field \
-    --image registry.webis.de/code-research/tira/tira-user-ir-lab-sose-2023-<YOUR-GROUP-NAME>/ir-datasets:0.0.1 \
-    --allow-network true \
-    --command 'diffir --dataset iranthology-<YOUR-GROUP-NAME> --web $outputDir/run.txt > $outputDir/run.html'
-```
-
-This yields a file `multi-field/run.html` that should look like this:
-
-![Screenshot_20230502_195048](https://user-images.githubusercontent.com/10050886/235745270-de591307-3ab5-40a5-8902-cf2442f10f06.png)
+Similarly, you can execute other notebooks (change the argument for `--notebook`).
 
 
 # Step 3: Submit tested retrieval approaches to TIRA
@@ -154,5 +109,5 @@ After you have added the software, you can run it by specifying the dataset on w
 
 ![Screenshot_20230502_201037](https://user-images.githubusercontent.com/10050886/235749854-262de14a-16ee-4d1e-9fb4-61fd90a943dd.png)
 
-Thats it, congrats for finishin milestone 2 :)
+Thats it, congrats for finishing milestone 2 :)
 
