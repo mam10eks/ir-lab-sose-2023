@@ -35,7 +35,7 @@ Besides those traditional approaches, we have starters for other, more advanced 
 - [ColBERT](todo-add-link)
 - [DPR](todo-add-link)
 
-Those starters might serve as inspiration for more advanced retrieval paradigms (please note: for the IR lab, it is completely sufficient if you use the traditional approaches covered in this step-by-step guide, but feel of course free to look into more advanced approaches).
+Those starters might serve as inspiration for your individual retrieval paradigms that you will implement later in milestone 3 (please note: for milestone 2 of the IR lab, it is completely sufficient if you use simple approaches covered in this step-by-step guide, but feel of course free to look into more advanced approaches).
 
 To build the docker image with the traditional retrieval approaches, please execute:
 
