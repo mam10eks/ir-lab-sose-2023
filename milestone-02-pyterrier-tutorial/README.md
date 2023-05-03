@@ -20,3 +20,5 @@ As soon as your Jupyter server has started, you can navigate to [notebook1.ipynb
 
 In the IR course, you could develop any document representation for the IR Anthology (the corpus of the lab) that you like (in milestone 1). To simplify this tutorial, we use here the document representation of the sample solution for milestone 1.
 
+After you have finished this tutorial, you can continue with the [step-by-step guide for milestone 2](https://github.com/mam10eks/ir-lab-sose-2023/tree/main/milestone-02).
+
