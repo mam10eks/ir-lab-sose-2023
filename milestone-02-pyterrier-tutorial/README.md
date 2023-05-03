@@ -7,7 +7,7 @@ We assume you have cloned the repository and have switched your directory to the
 
 ```
 git clone git@github.com:mam10eks/ir-lab-sose-2023.git
-cd ir-lab-sose-2023/tree/main/milestone-02-pyterrier-tutorial
+cd ir-lab-sose-2023/milestone-02-pyterrier-tutorial
 ```
 
 In this directory, please start the Jupyter notebook on your system via:
