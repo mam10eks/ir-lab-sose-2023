@@ -6,7 +6,7 @@ Everything is copied from the official tutorial for PyTerrier but adopted for us
 We assume you have cloned the repository and have switched your directory to the directory where this notebook is located:
 
 ```
-git clone git@github.com:mam10eks/ir-lab-sose-2023.git
+git clone https://github.com/mam10eks/ir-lab-sose-2023.git
 cd ir-lab-sose-2023/milestone-02-pyterrier-tutorial
 ```
 
