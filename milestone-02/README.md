@@ -57,7 +57,7 @@ If we build the image, it already comes with the four jupyter notebooks that we 
 The image that we have created already has a script `/workspace/run-pyterrier-notebook.py` embedded (see the [source if you want more information](run-pyterrier-notebook.py)).
 This script takes a jupyter notebook and the input and output directory as arguments and executes the notebook by injecting the input and output.
 
-To execute the [pyterrier-bm25.ipynb](pyterrier-bm25.ipynb) in our docker image on your system as TIRA would execute it, the command would look like:
+To execute the [pyterrier-bm25.ipynb](pyterrier-bm25.ipynb) notebook that we included in our docker image on your system as TIRA would execute it, the command is:
 
 ```
 tira-run \
