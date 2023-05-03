@@ -1,5 +1,7 @@
 # Step-by-Step guide for Retrieval-Submissions to Milestone 2
 
+Before you start this step-by-step guide for milestone 2, please do the dedicated [PyTerrier tutorial](../milestone-02-pyterrier-tutorial/notebook1.ipynb).
+
 ## Step 0: Prerequisities
 
 We assume you have a working version of the docker image for milestone 1 available with the name `registry.webis.de/code-research/tira/tira-user-ir-lab-sose-2023-<YOUR-GROUP-NAME>/ir-datasets:0.0.1`. (Please adopt the name if you named your docker image differently.)
