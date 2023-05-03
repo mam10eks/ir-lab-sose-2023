@@ -22,14 +22,14 @@ In the following, we assume that you have a local version of the dataset inside 
 
 # Step 1: Implement baseline retrieval approaches
 
-We will create a docker image that cover a bunch of traditional retrieval approaches in jupyter notebooks:
+We will create a docker image that covers a bunch of simple baseline retrieval approaches in jupyter notebooks:
 
 - Using the BM25 retrieval model in [pyterrier-bm25.ipynb](pyterrier-bm25.ipynb)
 - Using BM25 with the query rewriting model SDM in [pyterrier-bm25-sdm.ipynb](pyterrier-bm25-sdm.ipynb)
 - Using BM25 with the query expansion model RM3 in [pyterrier-bm25-rm3.ipynb](pyterrier-bm25-rm3.ipynb)
 - Combining multiple retrieval scores on multiple retrieval fields in [pyterrier-multi-field.ipynb](pyterrier-multi-field.ipynb) (this might serve as starting point or inspiration for feature based learning-to-rank approaches).
 
-Besides those traditional approaches, we have starters for other, more advanced retrieval models available:
+Besides those traditional approaches, we have starters for other, more advanced baseline retrieval models available:
 
 - [MonoT5](todo-add-link)
 - [ColBERT](todo-add-link)
