@@ -16,5 +16,7 @@ In this directory, please start the Jupyter notebook on your system via:
 docker run -p 8888:8888 --rm -ti -v ${PWD}:/workspace --entrypoint jupyter webis/tira-ir-starter-pyterrier:0.0.2-base  notebook --allow-root --ip 0.0.0.0
 ```
 
+As soon as your Jupyter server has started, you can navigate to the [notebook1.ipynb](notebook1.ipynb).
+
 In the IR course, you could develop any document representation for the IR Anthology (the corpus of the lab) that you like (in milestone 1). To simplify this tutorial, we use here the document representation of the sample solution for milestone 1.
 
