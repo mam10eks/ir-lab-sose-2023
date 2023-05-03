@@ -43,7 +43,7 @@ To build the docker image with the traditional retrieval approaches, please exec
 docker build -t ir-lab-milestone-02 .
 ```
 
-After building the image was succesfull, we can start a Jupyter notebook to develop our retrieval pipelines:
+After building the image was succesful, we can start a Jupyter notebook to develop our retrieval pipelines:
 
 ```
 docker run --rm -ti -p 8888:8888 -v ${PWD}:/workspace ir-lab-milestone-02
