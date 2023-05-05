@@ -101,7 +101,7 @@ docker push registry.webis.de/code-research/tira/tira-user-ir-lab-sose-2023-<YOU
 ```
 
 Click on "Docker Submission" -> "Add Container" and specify the docker image and the to-be-executed command.
-E.g., for the `pyterrier-bm25.ipynb` notebook, the output should form should look like this:
+E.g., for the `pyterrier-bm25.ipynb` notebook, the output form should look like this:
 
 ![Screenshot_20230502_200700](https://user-images.githubusercontent.com/10050886/235749533-d710cf36-c097-4c23-96de-56d746073ca8.png)
 
