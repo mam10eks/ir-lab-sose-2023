@@ -105,7 +105,7 @@ E.g., for the `pyterrier-bm25.ipynb` notebook, the output form should look like 
 
 ![Screenshot_20230502_200700](https://user-images.githubusercontent.com/10050886/235749533-d710cf36-c097-4c23-96de-56d746073ca8.png)
 
-After you have added the software, you can run it by specifying the dataset on which it should run and the resources that it gets for its execution:
+After you have added the software, you can run it by specifying the dataset on which it should run (your dataset created for milestone 1) and the resources that it gets for its execution:
 
 ![Screenshot_20230502_201037](https://user-images.githubusercontent.com/10050886/235749854-262de14a-16ee-4d1e-9fb4-61fd90a943dd.png)
 
