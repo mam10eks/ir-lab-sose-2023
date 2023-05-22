@@ -6,7 +6,7 @@ Before you start this step-by-step guide for milestone 2, please do the dedicate
 
 We assume you have a working version of the docker image for milestone 1 available with the name `registry.webis.de/code-research/tira/tira-user-ir-lab-sose-2023-<YOUR-GROUP-NAME>/ir-datasets:0.0.1`. (Please adopt the name if you named your docker image differently.)
 
-Please add your the relevance judgments that you create as part of milestone 2 to your docker image (if you do not have them yet, you can use a qrels.txt file with a single line).
+Please update your image by adding the relevance judgments that you create as part of milestone 2 to your docker image (if you do not have them yet, you can use an empty qrels.txt file).
 
 - This commit shows all steps required to add your relevance judgments: https://github.com/mam10eks/ir-lab-sose-2023/commit/0393b28c034e7377d20553879bcd4501185b8531
 - The resulting integration for ir_datasets should look like this: https://github.com/mam10eks/ir-lab-sose-2023/tree/main/milestone-01
