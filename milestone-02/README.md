@@ -88,7 +88,7 @@ After we have executed the command above, we can again render the results:
 ```
 tira-run \
     --output-directory ${PWD}/bm25-output \
-    --image registry.webis.de/code-research/tira/tira-user-ir-lab-sose-2023-<YOUR-GROUP-NAME>/ir-datasets:0.0.1 \
+    --image <GROUP-NAME-QRELS> \
     --allow-network true \
     --command 'diffir --dataset iranthology-<YOUR-GROUP-NAME> --web $outputDir/run.txt > $outputDir/run.html'
 ```
