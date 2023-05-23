@@ -16,7 +16,7 @@ In detail, this commit did the following:
 - Added the relevance judgments into a file `qrels.txt` to the directory that contains the corpus
 - Register the qrels to the ir_dataset: https://github.com/mam10eks/ir-lab-sose-2023/blob/main/milestone-01/ir_anthology.py#L20
 
-With those changes, please rebuild your docker image of milestone 1, so that it contains your relevance judgments.
+With those changes, please rebuild your docker image of milestone 1 and call it \<GROUP-NAME-QRELS\>, so that it contains your relevance judgments.
 
 ### Create the retrieval dataset
 
@@ -25,7 +25,7 @@ Please use your updated docker image of milestone 1 to export your retrieval dat
 ```
 tira-run \
     --output-directory ${PWD}/iranthology-dataset-tira \
-    --image registry.webis.de/code-research/tira/tira-user-ir-lab-sose-2023-<YOUR-GROUP-NAME>/ir-datasets:0.0.1 \
+    --image <GROUP-NAME-QRELS> \
     --allow-network true \
     --command '/irds_cli.sh --ir_datasets_id iranthology-<YOUR-GROUP-NAME> --output_dataset_path $outputDir'
 ```
