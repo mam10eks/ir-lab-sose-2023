@@ -20,7 +20,7 @@ With those changes, please rebuild your docker image of milestone 1, so that it 
 
 ### Create the retrieval dataset
 
-Please use your updated docker image of milestone 1 to export your retrieval dataset to your filesystem. (Alternatively, you can download the dataset from TIRA.)
+Please use your updated docker image of milestone 1 to export your retrieval dataset to your filesystem.
 
 ```
 tira-run \
