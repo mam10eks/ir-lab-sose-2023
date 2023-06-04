@@ -27,7 +27,7 @@ tira-run \
     --output-directory ${PWD}/iranthology-dataset-tira \
     --image <GROUP-NAME-QRELS> \
     --allow-network true \
-    --command '/irds_cli.sh --ir_datasets_id iranthology-<YOUR-GROUP-NAME> --output_dataset_path $outputDir'
+    --command '/irds_cli.sh --ir_datasets_id iranthology-ir-lab-sose2023-<YOUR-GROUP-NAME> --output_dataset_path $outputDir'
 ```
 
 In the following, we assume that you have a local version of the dataset inside `iranthology-dataset-tira`.
@@ -90,7 +90,7 @@ tira-run \
     --output-directory ${PWD}/bm25-output \
     --image <GROUP-NAME-QRELS> \
     --allow-network true \
-    --command 'diffir --dataset iranthology-<YOUR-GROUP-NAME> --web $outputDir/run.txt > $outputDir/run.html'
+    --command 'diffir --dataset iranthology-ir-lab-sose2023-<YOUR-GROUP-NAME> --web $outputDir/run.txt > $outputDir/run.html'
 ```
 
 This yields a file `bm25-output/run.html` that should look like this:
@@ -106,7 +106,7 @@ tira-run \
     --input-directory ${PWD}/bm25-output \
     --image <GROUP-NAME-QRELS> \
     --allow-network true \
-    --command 'ir_measures iranthology-<YOUR-GROUP-NAME> $inputDataset/run.txt nDCG@10 MRR P@10 Recall@100'
+    --command 'ir_measures iranthology-ir-lab-sose2023-<YOUR-GROUP-NAME> $inputDataset/run.txt nDCG@10 MRR P@10 Recall@100'
 ```
 
 This should print some effectiveness scores for nDCG@10 and RR on stdout.
