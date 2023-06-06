@@ -48,9 +48,6 @@ After building the image was succesful, we can start a Jupyter notebook to devel
 docker run --rm -ti -p 8888:8888 -v ${PWD}:/workspace ir-lab-milestone-02
 ```
 
-If we build the image, it already comes with the four jupyter notebooks that we linked above, so lets run them locally.
-
-
 # Step 2: Test your retrieval approach locally
 
 The image that we have created already has a script `/workspace/run-pyterrier-notebook.py` embedded (see the [source if you want more information](https://github.com/tira-io/ir-experiment-platform/blob/main/tira-ir-starters/pyterrier/run-pyterrier-notebook.py)).
